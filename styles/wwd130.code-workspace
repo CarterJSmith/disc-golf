@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../WDD130/wwd130"
+		},
+		{
+			"path": "../../../../../Downloads/positioning/__MACOSX"
+		},
+		{
+			"path": "../../../../../Downloads/positioning/positioning"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wwd130"
+	}
+}
