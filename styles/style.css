@@ -5,7 +5,7 @@
 body{
     background-color: #012326;
     color: white;
-    font-family: "Solway", sans-serif, Arial, Helvetica;
+    font-family: "Oswald", sans-serif, Arial, Helvetica;
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -59,7 +59,6 @@ nav a{
     grid-column: 1/2;
     grid-row: 1/2;
     z-index: 1;
-    align-self: left;
     padding-left: 1em;;
 }
 
