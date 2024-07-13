@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css">
+    <link id="stylesheet" rel="stylesheet" href="styles/style.css">
     <title>Home | Master Your Disc</title>
+    <script>
+        function load_stylesheet(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            var stylesheet = document.getElementById("stylesheet");
+            // .href.endswith fro AI
+            if (stylesheet.href.endsWith("styles/style.css")) {
+                stylesheet.href = "styles/light-style.css"; // Switch to light theme
+            } else {
+                stylesheet.href = "styles/style.css"; // Switch back to default theme
+            } 
+            
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -14,6 +27,9 @@
             <a href="master-your-disc.html">Master Your Disc</a>
             <a href="build-your-bag.html">Build Your Bag</a>
         </nav>
+        <div id="theme-link">
+            <a class="theme-button" href="#" onclick="load_stylesheet(event)">Change Theme</a>
+        </div>
     </header>
     <main>
         <div class="hero-banner">
@@ -24,17 +40,17 @@
             <h2 id="home-title">Explore</h2>
             <p id="home-info">Disc golf, like traditional golf, requires a blend of skill, strategy, and technique. Whether you're a novice or an experienced player, refining your approach can make a significant difference in your performance. Discover techniques to elevate your game in "Master Your Disc" or explore "Build Your Bag" for the competitive edge in your next game!</p>
             <section class="navigation-banners">
-                <h3 class="home-tile-title">Master Your Disc</h3>
-                <a class="home-tile-img" href="master-your-disc.html"><img src="images/throwing-tile.webp" alt="A man throwing a frisbee"></a>
+                <a class="home-tile-title" href="master-your-disc.html"><h3 >Master Your Disc</h3></a>
+                <img class="home-tile-img" src="images/throwing-tile.webp" alt="A man throwing a frisbee">
             </section>
             <section class="navigation-banners">
-                <h3 class="home-tile-title">Build Your Bag</h3>
-                <a class="home-tile-img" href="build-your-bag.html"><img src="images/bag-disc-tile.webp" alt="A bag full of disc golf discs"></a>
+                <a class="home-tile-title" href="build-your-bag.html"><h3 >Build Your Bag</h3></a>
+                <img class="home-tile-img" src="images/bag-disc-tile.webp" alt="A bag full of disc golf discs">
             </section>
         </div>
     </main>
     <footer>
-        <p>Copyright &copy; 2024</p>
+        <p id="Copyright">Copyright &copy; 2024</p>
         <a class="site-link" href="site-plan.html">Site Plan</a>
         <div class="social">
                 <a class="site-link" href="https://facebook.com" target="_blank">

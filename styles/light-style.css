@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 :root{
-    --background-color: #012326;
-    --banner-color: #A64521;
-    --text-color: white;
-    --hover-color: #F2EFE4;
+    --background-color: #F2EFE4;
+    --banner-color: #012326;
+    --text-color: black;
+    --hover-color: #A64521;
 
 }
 
@@ -90,7 +90,8 @@ nav a{
     grid-column: 1/2;
     grid-row: 1/2;
     z-index: 1;
-    padding-left: 1em;;
+    padding-left: 1em;
+    color: white;
 }
 
 .main-page{
@@ -131,7 +132,7 @@ nav a{
     grid-column: 1/2;
     z-index: 1;
     padding-left: 5%;
-}
+} 
 
 #Copyright{
     color: white;
