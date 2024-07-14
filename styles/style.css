@@ -52,6 +52,12 @@ nav a{
     padding: 35px;
 }
 
+.page-banner{
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
 #theme-link{
     display: flex;
     justify-self: right;
@@ -131,6 +137,43 @@ nav a{
     grid-column: 1/2;
     z-index: 1;
     padding-left: 5%;
+}
+
+/* .subpage-main{
+    padding: 3%;
+} */
+
+.info-tile{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: solid 5px var(--hover-color);
+    padding: 3%;
+    margin: 5%;
+
+}
+
+.title-tile{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    z-index: 1;
+    
+}
+
+.tile-img{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-left: 2%;
+    width: 80%;
+    padding-top: 6%;
+}
+
+.tile-paragraphs{
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.info-closing{
+    grid-column: 1/3;
 }
 
 #Copyright{
